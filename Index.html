@@ -4,25 +4,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/113b72d011.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/style.css">
     <title>Ohmyfood</title>
 </head>
+<body>
+<div class="container">
 <!---------------------------------------------------HEADER------------------------------------------------->
-
 <header>
     <h1>ohmyfood</h1>
 </header>
+<!---------------------------------------------------NAV---------------------------------------------------->
+</nav>
+    <id class="localisation"><i class="fas fa-map-marker-alt"></i>Paris,belleville</id>
+    <h2>Book the menu you like</h2>
+    <p>discover top-of-the-art restaurants we picked for you</p>
+    <a class="button" href "..."> Explore our restaurants</a>
+</nav>
+<!---------------------------------------------------Aside-------------------------------------------------->
+<aside>
+    <h2>How it works</h2>
+    <ol class="aside">
+        <li class="aside__rules"><i class="fas fa-mobile-alt"></i>Choose a restaurant</li>
+        <li class="aside__rules"><i class="fas fa-list-ul"></i>Create your menu</li>
+        <li class="aside__rules aside__rules--purple"><i class="fas fa-store"></i>Go enjoy it at the restaurant</li>
+    </ol>
 <!---------------------------------------------------MAIN--------------------------------------------------->
 <main>
-<!---------------------------------------------------barre de recherce------------------------------------->
-<nav class="menu1"><a href="menu-1.html">Menu 1</a>La note enchantée<br> Menu</nav>
-<nav class="menu2"><a href="menu-2.html">Menu 2</a>Le chic à la française<br> Menu</nav>
-<nav class="menu3"><a href="menu-3.html">Menu 3</a>Le délice des papilles<br> Menu</nav>
-<nav class="menu4"><a href="menu-4.html">Menu 4</a>La palette du goût<br> Menu</nav>
-<h2>Prochainement</h2>
-</main>
+    <h2>Restaurants</h2>
+    <ul class="nav">
+        <li class="nav__menuretaurant nav__menurestaurant--new">
+            <a href="menu-1.html">
+                <img src="pictures/restaurants/thefullpalette.jpg" alt="Picture of The Full Pallette's menu">
+                <div class="caption_menu">
+                    <h3>The Full Palette</h3>
+                    <div class="icon_heart"><i class="far fa-heart"></i></div>
+                    <p>New York</p>
+                </div>
+            </a>
+        </li>
+        <li class="nav__menuretaurant nav__menurestaurant--new">
+            <a href="menu-2.html">
+                <img src="pictures/restaurants/theenchantedplate.jpg" alt="Picture of The Enchanted Plate's menu">
+                <div class="caption_menu">
+                    <h3>The Enchanted Plate</h3>
+                    <div class="icon_heart"><i class="far fa-heart"></i></div>
+                    <p>New York</p>
+                </div>
+            </a>
+        </li>
+        <li class="nav__menuretaurant">
+            <a href="menu-3.html">
+                <img src="pictures/restaurants/bastille.jpg" alt="Picture of Bastille's menu">
+                <div class="caption_menu">
+                    <h3>Bastille</h3>
+                    <div class="icon_heart"><i class="far fa-heart"></i></div>
+                    <p>New York</p>
+                </div>
+            </a>    
+        </li>
+        <li class="nav__menurestaurant">
+            <a href="menu-4.html">
+                <img src="pictures/restaurants/lagourmand.jpg" alt="picture of Le Gourmand's menu">
+                <div class="caption_menu">
+                    <h3>Le Gourmand</h3>
+                    <div class="icon_heart"><i class="far fa-heart"></i></div>
+                    <p>New York</p>
+                </div>
+            </a>
+        </li>
+
 <!----------------------------------------------------FOOTER---------------------------------------------->
 <footer>
-<h3>Mentions légales</h3>
-<h3>Contactez-nous</h3>
+    <h3>ohmyfood</h1>
+    <div class="suggest"><i class="fas fa-utensils"></i>Suggest a restaurant</div>
+    <div class="partner"><i class="far fa-handshake"></i>Become a partner</div>
+    <a class="legal" href"...">Legal</a><br>
+    <a class="contact" href="mailto:ohmyfood@gmail.com">Contact</a>
 </footer>
+</div>
+</body>
