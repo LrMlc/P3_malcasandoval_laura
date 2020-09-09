@@ -20,28 +20,82 @@ $tertiary: #99E2D0;
 h1{
     font-family:'shrikhandregular';
     font-weight:bold;
+    font-style: italic;
     text-align:center;
     background-color:white;
 }
 /*-----------------------------------Nav------------------------------------*/
 nav{
     text-align:center;
-    background-color: grey;
+    background-color:#EEEEEE;
+    text-align: center;
+}
+.localisation{
+    display:block;
+    background-color: #E0E0E0;
+    text-align: center;
+    
 }
 /*-----------------------------------Body----------------------------------*/
 body{
     font-family:'robotoregular';
+    width:100%;
+}
+/*-----------------------------------Aside----------------------------------*/
+ol{
+    list-style:none;
+    padding:0;
+}
+ol li{
+    background-color:#EEEEEE;
+    text-align: justify;
+    font-weight:bold;
+    border-radius:13px;
+    margin: 15px;
+    padding:10px;
+    box-shadow: 0 5px 3px #BDBDBD;
+    position: relative;
+}
+ol li::before{
+    content:"1";
+    background-color: $primary;
+    color:white;
+    border-radius:50% 50%;
+    display:block;
+    position: absolute;
 }
 /*-----------------------------------Main-----------------------------------*/
+main{
+    background-color:#EEEEEE;
+}
 img{
     width: 100%;
     height: auto;
+}
+ul{
+    list-style:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+ul li{
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+ul li::after{
+        content:"new";
+        background-color: $tertiary;
+        color:#00BFA5;
 }
 /*-----------------------------------Footer--------------------------------*/
 footer{
     background-color:black;
     color:white;
-    h1{
-        text-align:left;
-    }
+    text-align:left;
+    padding: 20px;
+}
+h3{
+    margin-bottom:10px;
+    margin-top:5px;
+    font-style: italic;
 }
