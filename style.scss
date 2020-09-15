@@ -15,58 +15,111 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$first:#F5F5F5;
+$second:#E0E0E0;
+
+h1 h2 h3{
+    font-family: 'shrinkhandregular';
+}
+h2{
+    padding-left:15px;
+}
 
 /*------------------------------------Header-------------------------------*/
 h1{
-    font-family:'shrikhandregular';
     font-weight:bold;
     font-style: italic;
     text-align:center;
     background-color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 /*-----------------------------------Nav------------------------------------*/
-nav{
+.nav{
     text-align:center;
-    background-color:#EEEEEE;
+    background-color:$first;
+    h2{
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+    p{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+.button{
+    background: $primary;  
+    background: linear-gradient(to right, $secondary, $primary); 
+    color: white;
     text-align: center;
+    padding:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:15px;
+    border-radius: 2rem;
+    text-decoration: none;
 }
 .localisation{
     display:block;
-    background-color: #E0E0E0;
+    background-color: $second;
     text-align: center;
+    padding:0;
     
+}
+.nav .fas{
+    font-size: 15px;
+    width:30px;
 }
 /*-----------------------------------Body----------------------------------*/
 body{
     font-family:'robotoregular';
     width:100%;
+    margin: 0;
 }
 /*-----------------------------------Aside----------------------------------*/
 ol{
     list-style:none;
     padding:0;
-}
-ol li{
-    background-color:#EEEEEE;
+    li{
+    background-color:$first;
     text-align: justify;
     font-weight:bold;
     border-radius:13px;
-    margin: 15px;
-    padding:10px;
-    box-shadow: 0 5px 3px #BDBDBD;
+    margin: 20px;
+    padding:5px;
+    box-shadow: 0 5px 3px $second;
     position: relative;
+    counter-increment: listing;}
 }
 ol li::before{
-    content:"1";
+    content: counter(listing);
     background-color: $primary;
     color:white;
     border-radius:50% 50%;
     display:block;
     position: absolute;
+    top:35%;
+    left:-3%;
+    width: 20px;
+    text-align: center;
+
+}
+li .fas{
+    font-size:15px;
+    width: 20px;
+    padding:10px;
+    padding-left:20px;
+}
+.aside__rules--purple{
+    background-color: $primary;
+    opacity:0.1;
+    .fas{
+    color:$primary;}
 }
 /*-----------------------------------Main-----------------------------------*/
 main{
-    background-color:#EEEEEE;
+    background-color:$first;
 }
 img{
     width: 100%;
@@ -75,27 +128,49 @@ img{
 ul{
     list-style:none;
     margin-left: 0;
-    padding-left: 0;
+    padding:15px;
 }
 ul li{
     margin-bottom: 15px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    position:relative;
 }
 ul li::after{
-        content:"new";
+        content:"New";
         background-color: $tertiary;
         color:#00BFA5;
+        font-weight: bold;
+        display: block;
+        position: absolute;
+        top:5%;
+        left: 75%;
+        padding:5px;
+        padding-left:15px;
+        padding-right:15px;
 }
 /*-----------------------------------Footer--------------------------------*/
 footer{
     background-color:black;
     color:white;
     text-align:left;
-    padding: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-h3{
-    margin-bottom:10px;
-    margin-top:5px;
+footer h3{
+    margin-bottom:20px;
+    margin: auto;
+    margin-bottom: 15px;
     font-style: italic;
+}
+footer .fas{
+    width:20px;
+    margin:auto;
+    font-size:10px;
+}
+.interaction p a{
+    margin: 10px;
 }
