@@ -5,79 +5,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/113b72d011.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheetmenu.css">
     <title>Ohmyfood-menu4</title>
 </head>
+
 <body>
-<!-------------------------------------Header------------------------------------------->
-<header>
-    <h1>ohmyfood</h1>
-</header>
-<!--------------------------------------Aside------------------------------------------>
-<aside>
-    <img src="pictures/restaurants/legourmand.jpg" alt="Picture of le gourmand's menu">
-</aside>
-<!-----------------------------------Main------------------------->
-<Main>
-    <h1>Le Gourmand</h1>
-    <div class="entrees">
+    <!-------------------------------------Header------------------------------------------->
+    <header>
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-arrow-left fa-lg back"></i>
+            </a>
+            <h1>ohmyfood</h1>
+        </nav>
+    </header>
+    <!--------------------------------------Aside------------------------------------------>
+    <aside>
+        <img src="pictures/restaurants/legourmand.jpg" alt="Picture of the full palette's menu">
+    </aside>
+    <!-----------------------------------Main------------------------->
+    <main>
+        <div class="title_menu">
+            <h1>Le Gourmand</h1>
+            <i class="far fa-heart"></i>
+        </div>
         <h2>ENTREES</h2>
-        <div class="wanted_food">
-            <h2>Tuna Carpaccio</h2>
-            <p>seasoned with yuzu</p>
-            <div class="price">25€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Crunchy Lobster Croquets</h2>
-            <p>with seasonal vegetables</p>
-            <div class="price">35€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Mushroom soup</h2>
-            <p>with truffle cream</p>
-            <div class="price">20€</div>
-        </div>
-    </div>
-    <div class="dish">
+        <ul class="entrees">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Tuna Carpaccio</h3>
+                    <div class="price">25€</div>
+                    <p>seasoned with yuzu</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Crunchy Lobster Croquets</h3>
+                    <div class="price">35€</div>
+                    <p>with seasonal vegetables</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Mushroom Soup</h3>
+                    <div class="price">20€</div>
+                    <p>with truffles</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+        </ul>
         <h2>MAIN DISH</h2>
-        <div class="wanted_food">
-            <h2>Roast Chicken with Provincial Herbs</h2>
-            <p>with truffle cream</p>
-            <div class="price">40€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Roasted Lobster</h2>
-            <p>with seasonal vegetables</p>
-            <div class="price">35€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Angust Beef Ribs</h2>
-            <p>with mashed parsnips</p>
-            <div class="price">44€</div>
-        </div>
-    </div>
-    <div class="desserts">
-        <h2>DESSERTS<h2>
-        <div class="wanted_food">
-            <h2>Assorted Dessert Plate<h2>
-            <p>Chef's choice</p>
-            <div class="price">18€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Crème brulée</h2>
-            <p>Revisited</p>
-            <div class="price">22€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Tiramisu</h2>
-            <p>with hazelnuts</p>
-            <div class="price">23€</div>
-        </div>
-    </div>
-    <a class="button" href="">Order</a>
-</Main>
-<!-------------------------------------Footer--------------------------------------------------->
-<footer>
-    <h3>La note enchantée</h3>
-</footer>
+        <ul class="dish">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Roast Chicken with Provincial Herbs</h3>
+                    <div class="price">40€</div>
+                    <p>with truffle cream</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Roasted Lobster</h3>
+                    <div class="price">35€</div>
+                    <p>with seasonal vegetables</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Angust Beef Ribs</h3>
+                    <div class="price">44€</div>
+                    <p>with mashed parsnips</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+        </ul>
+        <h2>DESSERTS</h2>
+        <ul class="desserts">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Assorted Dessert Piste</h3>
+                    <div class="price">18€</div>
+                    <p>Chef's choice</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Crème Brûlée</h3>
+                    <div class="price">22€</div>
+                    <p>Revisited</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Tiramisu</h3>
+                    <div class="price">23€</div>
+                    <p>with hazelnuts</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            </ul>
+            <a class="button">Order</a>
+    </main>
+    <!-------------------------------------Footer--------------------------------------------------->
+    <footer>
+        <h3>ohmyfood</h3>
+        <div class="interaction1"><i class="fas fa-utensils"></i>Suggest a restaurant</div>
+        <div class="interaction2"><i class="fas fa-hands-helping"></i>Become a partner</div>
+        <a class="legal" href="stylesheetlegal.css">Legal</a><br>
+        <a class="contact" href="mailto:ohmyfood@mail.com">Contact</a>
+    </footer>
 </body>

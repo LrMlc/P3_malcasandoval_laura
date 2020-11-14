@@ -5,79 +5,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/113b72d011.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheetmenu.css">
     <title>Ohmyfood-menu3</title>
 </head>
+
 <body>
-<!-------------------------------------Header------------------------------------------->
-<header>
-    <h1>ohmyfood</h1>
-</header>
-<!--------------------------------------Aside------------------------------------------>
-<aside>
-    <img src="pictures/restaurants/bastille.jpg" alt="Picture bastille's menu">
-</aside>
-<!-----------------------------------Main------------------------->
-<Main>
-    <h1>Bastille</h1>
-    <div class="entrees">
+    <!-------------------------------------Header------------------------------------------->
+    <header>
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-arrow-left fa-lg back"></i>
+            </a>
+            <h1>ohmyfood</h1>
+        </nav>
+    </header>
+    <!--------------------------------------Aside------------------------------------------>
+    <aside>
+        <img src="pictures/restaurants/bastille.jpg" alt="Picture of the full palette's menu">
+    </aside>
+    <!-----------------------------------Main------------------------->
+    <main>
+        <div class="title_menu">
+            <h1>Bastille</h1>
+            <i class="far fa-heart"></i>
+        </div>
         <h2>ENTREES</h2>
-        <div class="wanted_food">
-            <h2>Citrus Squid Carpaccio</h2>
-            <p>with orange zest</p>
-            <div class="price">25€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Grandmother's Vegetable Soup</h2>
-            <p>Carrots, parsnips, Jerusalem artichoke</p>
-            <div class="price">35€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Onion Soup</h2>
-            <p>Revisited </p>
-            <div class="price">20€</div>
-        </div>
-    </div>
-    <div class="dish">
+        <ul class="entrees">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Citrus Squid Carpaccio</h3>
+                    <div class="price">25€</div>
+                    <p>with orange zest</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Grandmother's Vegetable Soup</h3>
+                    <div class="price">35€</div>
+                    <p>carrots, parsnips, Jerusalem artichoke</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Onion soup</h3>
+                    <div class="price">20€</div>
+                    <p>revisited</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+        </ul>
         <h2>MAIN DISH</h2>
-        <div class="wanted_food">
-            <h2>Scallops</h2>
-            <p>with mashed parsnip</p>
-            <div class="price">40€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Magret de canard</h2>
-            <p>with mashed sweet potatoes</p>
-            <div class="price">35€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Game Hen</h2>
-            <p>with vegetable gnocchis</p>
-            <div class="price">44€</div>
-        </div>
-    </div>
-    <div class="desserts">
-        <h2>DESSERTS<h2>
-        <div class="wanted_food">
-            <h2>Floral Ice Cream<h2>
-            <p>with hazelnut butter</p>
-            <div class="price">18€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Chocolate Lava Cake</h2>
-            <p>Revisited</p>
-            <div class="price">22€</div>
-        </div>
-        <div class="wanted_food">
-            <h2>Napolean</h2>
-            <p>with blueberries and marzipan</p>
-            <div class="price">23€</div>
-        </div>
-    </div>
-    <a class="button" href="">Order</a>
-</Main>
-<!-------------------------------------Footer--------------------------------------------------->
-<footer>
-    <h3>La note enchantée</h3>
-</footer>
+        <ul class="dish">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Scallops</h3>
+                    <div class="price">40€</div>
+                    <p>with mashed parsnip</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Magret de Canard</h3>
+                    <div class="price">35€</div>
+                    <p>with mashed potatoes</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Game Hen</h3>
+                    <div class="price">44€</div>
+                    <p>with vegetable gnocchis</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+        </ul>
+        <h2>DESSERTS</h2>
+        <ul class="desserts">
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Floral Ice Cream</h3>
+                    <div class="price">18€</div>
+                    <p>with hazelnut butter</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Chocolate Lava Cake</h3>
+                    <div class="price">22€</div>
+                    <p>Revisited</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="wanted_food">
+                <div class="plate">
+                    <h3>Napolean</h3>
+                    <div class="price">23€</div>
+                    <p>with blueberries and marzipan</p>
+                </div>
+                <div class="button-check"><i class="fas fa-check-circle"></i></div>
+            </li>
+            </ul>
+            <a class="button">Order</a>
+    </main>
+    <!-------------------------------------Footer--------------------------------------------------->
+    <footer>
+        <h3>ohmyfood</h3>
+        <div class="interaction1"><i class="fas fa-utensils"></i>Suggest a restaurant</div>
+        <div class="interaction2"><i class="fas fa-hands-helping"></i>Become a partner</div>
+        <a class="legal" href="stylesheetlegal.css">Legal</a><br>
+        <a class="contact" href="mailto:ohmyfood@mail.com">Contact</a>
+    </footer>
 </body>

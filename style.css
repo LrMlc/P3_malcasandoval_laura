@@ -1,0 +1,555 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h2 {
+  padding-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*------------------------------------Loader-------------------------------*/
+.loader {
+  border: 15px solid #E0E0E0;
+  border-top: 15px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: loading 3s;
+          animation: loading 3s;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loaderbg {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: fadeout 4s forwards;
+          animation: fadeout 4s forwards;
+  background-color: white;
+  overflow: hidden;
+}
+
+@-webkit-keyframes fadeout {
+  0%, 75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes fadeout {
+  0%, 75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+/*------------------------------------Header-------------------------------*/
+header {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+/*-----------------------------------Nav------------------------------------*/
+.nav {
+  text-align: center;
+  background-color: #F5F5F5;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+.nav h2 {
+  padding-left: 0;
+  margin: 30px;
+}
+
+.nav h3 {
+  margin: 0;
+  padding: 5px;
+}
+
+.nav p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  display: block;
+  text-align: center;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 3px #E0E0E0;
+          box-shadow: 0 5px 3px #E0E0E0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.button:hover {
+  opacity: 0.5;
+  -webkit-box-shadow: 0 5px 3px #BDBDBD;
+          box-shadow: 0 5px 3px #BDBDBD;
+}
+
+.localisation {
+  background-color: #E0E0E0;
+  text-align: center;
+  display: block;
+}
+
+.nav .fas {
+  font-size: 15px;
+  width: 30px;
+}
+
+/*-----------------------------------Body----------------------------------*/
+body {
+  font-family: 'robotoregular';
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin: 0;
+}
+
+/*-----------------------------------Aside----------------------------------*/
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol li {
+  background-color: #F5F5F5;
+  text-align: justify;
+  font-weight: bold;
+  border-radius: 13px;
+  margin: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 0 5px 3px #E0E0E0;
+          box-shadow: 0 5px 3px #E0E0E0;
+  position: relative;
+  counter-increment: listing;
+}
+
+ol li::before {
+  content: counter(listing);
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50% 50%;
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: -3%;
+  width: 20px;
+  text-align: center;
+}
+
+li .fas {
+  font-size: 15px;
+  width: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.aside__rules--purple {
+  background-color: #EDE7F6;
+}
+
+.aside__rules--purple .fas {
+  color: #9356DC;
+}
+
+/*-----------------------------------Main-----------------------------------*/
+main {
+  background-color: #F5F5F5;
+}
+
+.menupicture1 {
+  background-image: url(pictures/restaurants/thefullpalette.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 140px;
+}
+
+.menupicture2 {
+  background-image: url(pictures/restaurants/theenchantedplate.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 140px;
+}
+
+.menupicture3 {
+  background-image: url(pictures/restaurants/bastille.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 140px;
+}
+
+.menupicture4 {
+  background-image: url(pictures/restaurants/legourmand.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 140px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 15px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.nav p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 0;
+  padding-left: 7px;
+}
+
+.caption_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.icon_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menurestaurant--new::after {
+  content: "New";
+  background-color: #99E2D0;
+  color: #00BFA5;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 75%;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*-----------------------------------Heart animation-----------------------*/
+.icon_heart {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.icon_heart .main-heart {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.icon_heart .heart-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #9356DC;
+}
+
+.icon_heart:hover .main-heart {
+  -webkit-animation: 0.2s forwards disparition;
+          animation: 0.2s forwards disparition;
+}
+
+.icon_heart:hover .heart-background {
+  -webkit-animation: 0.2s forwards apparition;
+          animation: 0.2s forwards apparition;
+}
+
+.icon_heart:hover i {
+  padding: 0;
+}
+
+@-webkit-keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*-----------------------------------Footer--------------------------------*/
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-family: 'Shrikhand';
+}
+
+footer .fas {
+  width: 20px;
+  margin: auto;
+  font-size: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.interaction, p, a {
+  margin: 10px;
+}
+
+.interaction1, .interaction2 {
+  font-weight: bold;
+}
+
+/*-----------------------------------Responsive/First-breakpoint---------------------------------------*/
+@media screen and (min-width: 424px) and (max-width: 767px) {
+  .button {
+    padding: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 18px;
+  }
+  ol li {
+    padding-right: 10px;
+  }
+  ol li::before {
+    top: 29%;
+    left: -7%;
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  li .fas {
+    padding-left: 10px;
+  }
+}
+
+/*-------------------------------------Responsive/Second Breakpoint---------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  header {
+    margin-bottom: 30px;
+  }
+  h2 {
+    text-decoration: underline;
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .button {
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  ol {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  ol li {
+    border-radius: 30px;
+    display: inline-block;
+    padding: 25px;
+    font-weight: bolder;
+  }
+  li .fas {
+    font-size: 25px;
+    width: 30px;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+  ol li::before {
+    top: 25%;
+    left: -7%;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main h2 {
+    padding-top: 40px;
+  }
+  ul li {
+    display: inline-block;
+    margin: 30px;
+    border-radius: 40px;
+    border: 1px solid gray;
+  }
+  .menupicture1, .menupicture2, .menupicture3, .menupicture4 {
+    height: 200px;
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
