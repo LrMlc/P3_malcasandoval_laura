@@ -14,9 +14,6 @@ h1 {
     font-family: 'Shrikhand', cursive;
 }
 
-
-
-
 /*------------------------------------Header-------------------------------*/
 
 header {
@@ -61,17 +58,22 @@ main {
     padding-bottom: 20px;
     background-color: $first;
     position: relative;
-    border-radius: 40px 40px 0 0;
-    top: -40px;
-    padding-top: 30px;
-}
-
-main h1 {
+    h1 {
     background-color: $first;
     text-align: left;
     margin-left: 20px;
-    font-style: normal;
+    font-style: normal;}
 }
+.title_menu::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        top:-30px;
+        height: 30px;
+        border-radius: 40px 40px 0 0;
+        background-color: $first;
+    }
 
 .title_menu {
     display: flex;
@@ -209,12 +211,20 @@ li:hover .button-check {
     text-align: center;
     font-weight: bold;
     border-radius: 2rem;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 40px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding: 20px;
     text-decoration: none;
     box-shadow: 0 5px 3px $second;
+    transition-property: opacity;
+    transition-property:box-shadow;
+    &:hover{
+        opacity: 0.5; 
+        box-shadow: 0 5px 3px #BDBDBD ;
+    }
 }
 
 
@@ -254,7 +264,7 @@ footer a{
 
 /*----------------------------------Responsive/first-breakpoint--------------------------------*/
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 424px) and (max-width: 768px) {
     img {
         width: 80%;
         display: block;
@@ -288,7 +298,11 @@ footer a{
 
 /*-----------------------------------Responsive/Second-breakpoint--------------------------------------*/
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px){
+    body{
+        max-width: 1300px;
+        margin: auto;
+    }
     img{
         width: 80%;
         display: block;
