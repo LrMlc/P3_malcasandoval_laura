@@ -58,6 +58,7 @@ a {
   z-index: 1000;
   position: fixed;
   width: 100%;
+  max-width: 1300px;
   height: 100vh;
   -webkit-animation: fadeout 4s forwards;
           animation: fadeout 4s forwards;

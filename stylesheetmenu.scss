@@ -85,12 +85,59 @@ main {
     font-size: 20px;
     padding-right: 45px;
 }
+.icon_heart{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-right: 50px;
+    justify-self: center;
+    align-self: center;
+    .main-heart{
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .heart-background{
+        position: absolute;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        color: #9356DC;
+    }
+    &:hover{
+        .main-heart{
+        animation: 0.2s forwards disparition;
+        }
+    .heart-background{
+        animation: 0.2s forwards apparition;
+    }
+    i{
+        padding:0;
+    }
+    }
+    @keyframes disparition {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity:0;
+        }
+        
+    }
+    @keyframes apparition{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+}
 
 h2 {
     margin-left: 20px;
     font-weight: inherit;
 }
-
 h2::after {
     content: '';
     display: block;
@@ -100,7 +147,6 @@ h2::after {
     background-color: $tertiary;
     bottom: 0;
 }
-
 ul {
     list-style: none;
     padding: 0;
@@ -119,6 +165,11 @@ ul {
         transform: translateY(30px);
         opacity: 0.25;
         animation-fill-mode: forwards;
+        p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
         .plate {
             display: grid;
             padding:10px;
@@ -271,6 +322,9 @@ footer a{
         margin-left: auto;
         margin-right: auto;
     }
+    .icon_heart{
+        margin-right: 140px;
+    }
     h2 {
         margin-right: 20px;
         text-align: center;
@@ -326,7 +380,7 @@ footer a{
         padding-right: 150px;
     }
     .button{
-        margin-left: 280PX;
-        margin-right: 280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

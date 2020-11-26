@@ -45,6 +45,7 @@ a{
     z-index: 1000;
     position: fixed;
     width: 100%;
+    max-width: 1300px;
     height:100vh;
     animation: fadeout 4s forwards;
     background-color: white;

@@ -92,6 +92,82 @@ main h1 {
   padding-right: 45px;
 }
 
+.icon_heart {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-right: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.icon_heart .main-heart {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.icon_heart .heart-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #9356DC;
+}
+
+.icon_heart:hover .main-heart {
+  -webkit-animation: 0.2s forwards disparition;
+          animation: 0.2s forwards disparition;
+}
+
+.icon_heart:hover .heart-background {
+  -webkit-animation: 0.2s forwards apparition;
+          animation: 0.2s forwards apparition;
+}
+
+.icon_heart:hover i {
+  padding: 0;
+}
+
+@-webkit-keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h2 {
   margin-left: 20px;
   font-weight: inherit;
@@ -138,6 +214,12 @@ ul li {
   opacity: 0.25;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+ul li p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 ul li .plate {
@@ -366,6 +448,9 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
+  .icon_heart {
+    margin-right: 140px;
+  }
   h2 {
     margin-right: 20px;
     text-align: center;
@@ -420,8 +505,8 @@ footer a {
     padding-right: 150px;
   }
   .button {
-    margin-left: 280PX;
-    margin-right: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=stylesheetmenu.css.map */
