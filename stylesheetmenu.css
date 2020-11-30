@@ -47,6 +47,8 @@ h1 {
 /*-----------------------------------Aside----------------------------------*/
 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*-----------------------------------Main-----------------------------------*/
@@ -463,8 +465,8 @@ footer a {
     margin-bottom: 20px;
   }
   .button {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
     border-radius: 3rem;
   }
