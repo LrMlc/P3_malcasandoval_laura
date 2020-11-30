@@ -110,6 +110,7 @@ main h1 {
 }
 
 .icon_heart .heart-background {
+  font-size: 20px;
   position: absolute;
   left: 0;
   right: 0;
@@ -476,9 +477,6 @@ footer a {
   body {
     max-width: 1300px;
     margin: auto;
-  }
-  .heart-background {
-    font-size: 20px;
   }
   img {
     width: 80%;
