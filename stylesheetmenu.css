@@ -447,7 +447,7 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
-  .icon_heart {
+  .main-heart, .heart-background {
     margin-right: 140px;
   }
   h2 {
